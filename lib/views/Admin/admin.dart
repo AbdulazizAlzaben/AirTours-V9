@@ -761,8 +761,10 @@ class _CreateFlightState extends State<CreateFlight> {
                                             depTime: dateTimeDep);
 
                                         clearAllFields();
-                                        await showFeedback(
-                                            context, 'Flight Added');
+                                        await showSuccessDialog(
+                                            //change from showFeedback to showSuccessDialog
+                                            context,
+                                            'Flight Added');
                                       } else {
                                         await showErrorDialog(context,
                                             'The departure must be after the current time.');

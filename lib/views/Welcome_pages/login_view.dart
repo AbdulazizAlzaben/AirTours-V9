@@ -66,7 +66,7 @@ class _LoginViewState extends State<LoginView> {
               children: [
                 Container(
                   height: 200,
-                  child: Image.asset('images/AirTours-5.png'), //new image
+                  child: Image.asset('images/AirTours-9.png'), //new image
                 ),
                 // const Text(
                 //   'AirTours',

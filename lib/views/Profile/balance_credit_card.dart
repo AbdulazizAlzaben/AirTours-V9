@@ -246,8 +246,10 @@ class _ChargeBalanceState extends State<ChargeBalance> {
                                 toNext();
                               }
                             });
-                            await showFeedback(
-                                context, 'balance successefully added');
+                            await showSuccessDialog(
+                                //change from showFeedback to showSuccessDialog
+                                context,
+                                'balance successefully added');
                             await Navigator.of(context).pushNamedAndRemoveUntil(
                                 bottomRoute, (route) => false);
                           },

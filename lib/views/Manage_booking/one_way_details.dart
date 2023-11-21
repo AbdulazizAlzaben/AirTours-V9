@@ -257,13 +257,17 @@ class _OneWayDetailsState extends State<OneWayDetails> {
 
                             if (result == true) {
                               setState(() {
-                                showFeedback(
-                                    context, 'Booking successfully upgraded.');
+                                showSuccessDialog(
+                                    //change from showFeedback to showSuccessDialog
+                                    context,
+                                    'Booking successfully upgraded.');
                                 bookingType = 'business';
                               });
                             } else {
-                              showFeedback(
-                                  context, 'Failed to upgrade booking.');
+                              showErrorDialog(
+                                  //change from showFeedback to showErrorDialog
+                                  context,
+                                  'Failed to upgrade booking.');
                             }
                           } else {
                             showErrorDialog(context, 'Payment Failed');
@@ -307,7 +311,10 @@ class _OneWayDetailsState extends State<OneWayDetails> {
                         c.retrievePreviousBalance(
                             FirebaseAuthProvider.authService().currentUser!.id,
                             canceledBookingPrice);
-                        showFeedback(context, 'Booking successfully deleted.');
+                        showSuccessDialog(
+                            //change from showFeedback to showSuccessDialog
+                            context,
+                            'Booking successfully deleted.');
                         Navigator.pop(context);
                       } else {
                         showErrorDialog(context,

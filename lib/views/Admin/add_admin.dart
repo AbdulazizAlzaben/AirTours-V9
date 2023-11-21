@@ -70,7 +70,10 @@ class _AddAdminState extends State<AddAdmin> {
                   c.createNewAdmin(
                       email: _email.text, phoneNum: _phoneNum.text);
                   //DB end
-                  await showFeedback(context, 'Admin Added');
+                  await showSuccessDialog(
+                      //change from showFeedback to showSuccessDialog
+                      context,
+                      'Admin Added');
                   await Navigator.of(context)
                       .pushNamedAndRemoveUntil(loginRoute, (route) => false);
                 } on WeakPasswordAuthException {

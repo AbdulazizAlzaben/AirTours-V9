@@ -28,7 +28,10 @@ int count = 1;
 int baggageCount = 1;
 int baggagePrice = 0;
 
-List<String> passengerType = ['guest', 'business'];
+List<String> passengerType = [
+  'Economy',
+  'Business'
+]; //change this line from ['guest', 'business'];
 String currentPassenger = passengerType[0];
 DateTimeRange dateRange = DateTimeRange(start: dateTime, end: dateTime);
 

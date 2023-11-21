@@ -39,7 +39,7 @@ class _BottomState extends State<Bottom> {
       bottomNavigationBar: GNav(
           gap: 8,
           backgroundColor:
-              Color.fromARGB(255, 13, 213, 130), //change color to green
+              const Color.fromARGB(255, 13, 213, 130), //change color to green
           color: Colors.black,
           activeColor: Colors.white,
           //tabBackgroundColor: Colors.white,
